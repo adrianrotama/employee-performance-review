@@ -5,7 +5,7 @@ This project uses the following technologies:
 
 - [React](https://reactjs.org), [React Router](https://reacttraining.com/react-router/), [Axios](https://github.com/axios/axios) for frontend
 - [Parcel](https://parceljs.org/) for web application bundler
-- [Ruby on Rails](https://rubyonrails.org/) for the backend
+- [Ruby on Rails](https://rubyonrails.org/) for the backend (Ruby 2.6.5, Rails 6.0.2.2)
 - [Rspec](https://github.com/rspec/rspec-rails) for the backend testing
 - MySQL for the database
 
@@ -44,16 +44,19 @@ $ rake start
 
 
 ## User Info
-Admin
-Username - admin@example.com
-Password -admin
+## Admin
+```
+Username: admin@example.com
+Password: admin
+```
+## Normal User / Employee
+```
+Username: userA@example.com
+Password: a
 
-Normal User / Employee
-Username - userA@example.com
-Password - a
+Username: userB@example.com
+Password: b
 
-Username - userB@example.com
-Password - b
-
-Username - userC@example.com
-Password - c
+Username: userC@example.com
+Password: c
+```
