@@ -1,0 +1,40 @@
+.employee-table{
+
+  .table-row{
+    padding: .75rem;
+    border-bottom: 1px solid #dee2e6;
+    &.table-header{
+      border-bottom: 2px solid #dee2e6;
+    }
+    &:not(.table-header){
+      cursor: pointer;
+      &:hover{
+        background-color: #efefef;
+      }
+    }
+  }
+  .role{
+    color: white;
+    font-size: 0.85rem;
+    padding: 0 12px;
+    border-radius: 5px;
+    text-align: center;
+
+    @include breakpoint(tablet){
+      padding: 2px;
+      max-width: 50px;
+    }
+
+    &.admin{background-color: $mainColor;}
+    &.normal{background-color: #2c9a2c;}
+  }
+  .name-width{width: 180px}
+  .email-width{width: 250px}
+  .role-width{width: 120px}
+  .action-width{width: 120px}
+  .date-width{width: 140px;}
+  .from-width{width: 150px}
+  .to-width{width: 150px}
+  .rating-width{width: 170px}
+  .review-width{width: 250px}
+}

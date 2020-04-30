@@ -1,0 +1,31 @@
+.header{
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+
+  .header-container{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size:1.2rem;
+    font-weight: bolder;
+    letter-spacing: -0.28px;
+    margin-left: 24px;
+    a{  
+      display: flex;
+      align-items: center;
+      position: relative;
+      &::before{  
+        content: "";
+        position: relative;
+        height: 26px;
+        width: 6px;
+        margin-right: 8px;
+        background-color: $mainColor;
+      }
+    }
+  }
+}

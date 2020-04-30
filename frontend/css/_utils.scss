@@ -1,0 +1,25 @@
+// ----------------------
+// VARIABLES
+// ----------------------
+$mainColor: #f24f4f;
+
+// ----------------------
+// MIXIN
+// ----------------------
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 1200px) { @content ; }
+  }
+  @else if $point == laptop {
+    @media (min-width: 992px) { @content ; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 768px) { @content ; }
+  }
+  @else if $point == tablet-sm {
+    @media (min-width: 600px) { @content ; }
+  }
+  @else if $point == mobileonly {
+    @media (max-width: 600px)  { @content ; }
+  }
+}

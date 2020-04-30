@@ -1,0 +1,100 @@
+.menubar{
+  display: none;
+  background: #fafafa;
+  min-height: calc(100vh - 60px);
+  padding: 20px 0;
+  color: #666;
+
+  @include breakpoint(tablet){
+    display: block;
+  }
+
+  .list{
+    display: block;
+    min-width: 200px;
+    padding: 12px 0px 12px 24px;
+
+    &.active{
+      color: white;
+      background-color: $mainColor;
+    }
+    &:not(.active):hover{
+      // color: $mainColor;
+      background-color: darken(#fafafa, 5%)
+    }
+  }
+}
+
+.menu-mobile{
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  bottom: 0px;
+  height: 65px;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  z-index: 100;
+  border-top: 1px solid rgb(221, 221, 221);
+  overflow: hidden;
+  transition: -ms-transform 0.2s cubic-bezier(0, 0, 0.1, 1) 0s, -webkit-transform 0.2s cubic-bezier(0, 0, 0.1, 1) 0s, transform 0.2s cubic-bezier(0, 0, 0.1, 1) 0s, visibility 0s ease 0s;
+
+  @include breakpoint(tablet){
+    display: none;
+  }
+
+  .m-container{
+    -webkit-box-pack: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    max-width: 560px;
+    margin: 0px auto;
+
+    .menu{
+      -webkit-box-pack: center;
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-box-align: center;
+      align-items: center;
+      color: rgb(113, 113, 113);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 64px;
+      hyphens: auto;
+      justify-content: center;
+      max-width: 20%;
+      min-width: 0px;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+      border-radius: 8px;
+      flex: 1 1 0px;
+      padding: 0px 2px;
+      text-decoration: none;
+
+      &.active{
+        color : $mainColor;
+      }
+      .icon{
+        height: 30px;
+        margin-bottom: 2px;
+        width: 30px;
+        padding: 3px;
+      }
+      .text{
+        font-size: 10px;
+        line-height: 12px;
+        max-height: 24px;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-weight: 600;
+        overflow-wrap: break-word;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+.byebug_history
+
+# Ignore frontend node modules & build.
+frontend/node_modules
+frontend/dist
+frontend/.cache*
+frontend/package-lock.json
+frontend/yarn.lock
