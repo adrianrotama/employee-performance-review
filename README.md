@@ -1,6 +1,6 @@
 ## Employee Performance Review
 Minimal Full-stack React-Rails app with role-based authentication.
-
+![](public/images/ss1.png)
 This project uses the following technologies:
 
 - [React](https://reactjs.org), [React Router](https://reacttraining.com/react-router/), [Axios](https://github.com/axios/axios) for frontend
